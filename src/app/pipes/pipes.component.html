@@ -1,0 +1,14 @@
+<div>
+  <span>
+    <!-- {{employee.name |summary |uppercase}} <br> -->
+       {{employee.name |pipeproper}}
+
+    <!-- {{employee.doj | date:'dd/MM/yyyy'}} <br> -->
+
+    <!-- {{employee.doj | date:'short'}}  -->
+    {{employee.doj | date:'fullDate'}} <br/>
+    {{employee.designation|uppercase}} <br>
+    {{employee.Address|uppercase}} <br>
+    {{employee.salary| currency:'INR'}} <br>
+  </span>
+</div>

@@ -1,0 +1,23 @@
+
+  <div class="container">
+    <div class="row">
+     <div class="col-md-3 col-xs-3">
+       <img src="../assets/images/paul.jpg" style="width:50%">
+    </div>
+    <div class="col-md-6 col-xs-6">
+        <span class="glyphicon"
+        [class.glyphicon-arrow-up]="isLiked"
+        [class.glyphicon-arrow-down]="!isLiked"
+        (click)="onClick()"
+
+      >
+      {{"total count"+count}}
+        </span>
+    </div>
+      </div>
+  </div>
+
+
+
+
+

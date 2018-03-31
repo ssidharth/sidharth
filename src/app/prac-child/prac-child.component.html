@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-md-6 col-xs-6">
+    <!-- <span class="glyphicon" [class.glyphicon-arrow-up]="isSelected"></span> -->
+    <!-- <button  (click)="up()">like</button><br/> -->
+    <span class="glyphicon" [class.glyphicon-arrow-up]="isSelected"></span>
+    <button [ngStyle]="{'backgroundcolor':isSelected ?'blue':'red',
+    'color':isSelected ?'green':'pink'}" (click)="up()">like</button><br/>
+   {{"count is"+Count}}<br/>
+    <span class="glyphicon" [class.glyphicon-arrow-down]="!isSelected"></span>
+    <button  (click)="down()">unlike</button><br/>
+  </div></div>

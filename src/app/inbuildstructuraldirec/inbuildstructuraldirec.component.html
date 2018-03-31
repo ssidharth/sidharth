@@ -1,0 +1,16 @@
+<div>
+<!-- <div *ngIf="isCourseAvailable()">
+  this couse is available.
+
+</div>
+<div *ngIf="!isCourseAvailable()">
+</div> -->
+<div [hidden]="!isCourseAvailable()">
+
+  couse available.
+  </div>
+<div [hidden]="isCourseAvailable()">
+  no couse available.
+</div>
+
+</div>

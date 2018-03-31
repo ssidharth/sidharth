@@ -1,0 +1,26 @@
+<!-- <input [value]="email" (keydown)="funct()"> -->
+<!-- <input [value]="email" (keydown)="email=$event.target.value;funct()"> -->
+keyboard :
+<!-- <input ($event)="email" (keydown)="funct($event)" -->
+template:
+<!-- <input #email (click)="funct(email=$event.taget.value)"> -->
+angular two way binding:
+<!-- <input [(ngModel)]="email" (keyup)="funct()"><br/> -->
+
+<!-- glyphicon: -->
+<!-- <span class="glyphicon"  -->
+<!-- [class.glyphicon-heart]=isSelected -->
+<!-- [class.glyphicon-heart-empty]=!isSelected -->
+<!-- (click)="onclick()"> -->
+<!-- </span> -->
+<!-- <button [style.background-color]="isclick?'blue':'red'" (click)="on()">ooooo</button> -->
+<!-- <button [style.background-color]="isclick?'blue':'red'" (click)="on()">ooooo</button> -->
+<!-- <span class="glyphicon" -->
+<!-- [class.glyphicon-plus]=isSelected -->
+<!-- [class.glyphicon-arrow-plus]=!isSelected -->
+<!-- (click)="on()"></span> -->
+<span class="glyphicon" [class.glyphicon-heart]="isSelected?'blue':'red'" (click)="on()"></span>
+<span class="glyphicon glyphicon-arrow-up" [ngStyle]="{'backgroundcolor':isSelected ?'blue':'red',
+'color':isSelected ?'green':'pink'}" (click)="on()"></span>
+
+

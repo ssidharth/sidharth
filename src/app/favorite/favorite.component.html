@@ -1,0 +1,5 @@
+<!-- <input (click)="onclick($event)"> -->
+
+<!-- <input (dblclick)="onclick($event)"> -->
+<!-- <button (click)="onClick()">click me</button> -->
+<input [value]="email" (keyup)="email=$event.target.value;onkeyup()">

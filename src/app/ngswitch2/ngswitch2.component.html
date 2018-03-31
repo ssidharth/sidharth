@@ -1,0 +1,28 @@
+<!-- <ul class="nav nav-pills"> -->
+
+  <!-- <li [class.active]="color=='red'"><a style="background-color: red" (click)="color=='red'">Red</a></li> -->
+<!-- <li [class.active]="color=='red'"><a style="background-color:green" (click)="color=='green'">green</a></li> -->
+<!-- <li [class.active]="color=='red'"><a style="background-color: blue" (click)="color='blue'">blue</a></li> -->
+<!-- </ul> -->
+<!-- <div  [ngSwitch]="color">   -->
+<!-- </div> -->
+<!-- </ul> -->
+<ul class= "nav nav-pills">
+<li [class.active]="color=='red'"><a (click)="color='red'">red</a></li>
+<li [class.active]="color=='yellow'"><a (click)="color='yellow'">yellow</a></li>
+<li [class.active]="color=='green'"><a (click)="color='green'">green</a></li>
+</ul>
+<div [ngSwitch]="color">
+<div  *ngSwitchCase="'red'">
+  this is red
+</div>
+
+<div  *ngSwitchCase="'yellow'">
+    this is yellow
+  </div>
+
+  <div *ngSwitchCase="'green'">
+      this is green
+    </div>
+
+  </div>

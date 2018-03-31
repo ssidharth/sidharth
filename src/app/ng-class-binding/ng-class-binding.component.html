@@ -1,0 +1,15 @@
+<!-- <span class="glyphicon" -->
+<!-- [class.glyphicon-star] ="isSlected" --> 
+<!-- [class.glyphicon-star-empty] ="!isSlected" -->
+<!-- (click)="onClick()" -->
+
+<!-- <span class="glyphicon" -->
+   <!-- [ngClass]="{'glyphicon-star':isSlected,'glyphicon-star-empty':!isSlected}" -->
+   <!-- (click)="onClick()" -->
+<!-- ></span> -->
+
+<span class="glyphicon  glyphicon-star" 
+
+[ngStyle]="{'backgroundColor':isSlected ?'red':'blue',
+'color':isSelected ?'white':'yellow'}"
+(click)="onClick()"></span>

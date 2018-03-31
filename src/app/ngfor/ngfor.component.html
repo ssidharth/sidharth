@@ -1,0 +1,29 @@
+
+<!-- <ul>
+<li *ngFor="let course of courses">
+  {{course.name}}
+{{course.pay}}
+{{course.duration}} </li> -->
+
+<!-- </ul> 
+
+ <ul>
+    <li *ngFor="let course of courses;index as i">
+     {{i}} {{course.name}}
+    {{course.pay}}
+    {{course.duration}} </li> -->
+    
+    
+ <!-- </ul> -->
+    
+
+     
+    <ul>
+        <li *ngFor="let course of courses;trackBy:trackCourse">
+         {{i}} {{course.name}}
+        {{course.pay}}
+        {{course.duration}} </li>
+        
+        
+        </ul>
+        <button (click)="car()">click</button>

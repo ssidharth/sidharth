@@ -1,0 +1,4 @@
+ <!-- ?<input [value]="email" (keyup.enter)="email=$event.target.value;onclick()"> --> -->
+<!-- <input  (keyup.enter)=" onclick($event)"/>  -->
+<!-- <input #email (keyup.enter)=" onclick(email)"/> -->
+<input [(ngModel)]="email" (keyup)="onclick()">
